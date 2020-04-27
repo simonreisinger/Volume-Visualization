@@ -1,0 +1,17 @@
+*.opensdf
+*.sdf
+*.suo
+*.user
+bin
+build-Debug
+*.obj
+*.pdb
+*.obj
+*.log
+*.tlog
+*.idb
+*.lastbuildstate
+*.ilk
+tmp
+*.exe
+.DS_Store

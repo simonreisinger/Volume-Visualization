@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95D446AE-20B1-43AC-B066-415877F97F49}</ProjectGuid>
+    <RootNamespace>Visualisierung1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>lib\glm\include;src;generated;lib;lib\glew\include;lib\qt\include;lib\qt\include\QtCLucene;lib\qt\include\QtCore;lib\qt\include\QtGui;lib\qt\include\QtOpenGL;lib\qt\include\QtOpenGLExtensions;lib\qt\include\QtPlatformSupport;lib\qt\include\QtUiTools;lib\qt\include\QtWidgets;lib\qt\include\QtZlib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib\glew\lib;lib\qt\lib\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32d.lib;opengl32.lib;glu32.lib;Qt5CLucened.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;Qt5OpenGLExtensionsd.lib;Qt5PlatformSupportd.lib;Qt5UiToolsd.lib;Qt5Widgetsd.lib;qtmaind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;generated;lib;lib\glew\include;lib\qt\include;lib\qt\include\QtCLucene;lib\qt\include\QtCore;lib\qt\include\QtGui;lib\qt\include\QtOpenGL;lib\qt\include\QtOpenGLExtensions;lib\qt\include\QtPlatformSupport;lib\qt\include\QtUiTools;lib\qt\include\QtWidgets;lib\qt\include\QtZlib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib\glew\lib;lib\qt\lib\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32d.lib;opengl32.lib;glu32.lib;Qt5CLucened.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;Qt5OpenGLExtensionsd.lib;Qt5PlatformSupportd.lib;Qt5UiToolsd.lib;Qt5Widgetsd.lib;qtmaind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;generated;lib;lib\glew\include;lib\qt\include;lib\qt\include\QtCLucene;lib\qt\include\QtCore;lib\qt\include\QtGui;lib\qt\include\QtOpenGL;lib\qt\include\QtOpenGLExtensions;lib\qt\include\QtPlatformSupport;lib\qt\include\QtUiTools;lib\qt\include\QtWidgets;lib\qt\include\QtZlib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>lib\glew\lib;lib\qt\lib\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;glu32.lib;Qt5CLucene.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;Qt5OpenGLExtensions.lib;Qt5PlatformSupport.lib;Qt5UiTools.lib;Qt5Widgets.lib;qtmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>src;generated;lib;lib\glew\include;lib\qt\include;lib\qt\include\QtCLucene;lib\qt\include\QtCore;lib\qt\include\QtGui;lib\qt\include\QtOpenGL;lib\qt\include\QtOpenGLExtensions;lib\qt\include\QtPlatformSupport;lib\qt\include\QtUiTools;lib\qt\include\QtWidgets;lib\qt\include\QtZlib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>lib\glew\lib;lib\qt\lib\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;opengl32.lib;glu32.lib;Qt5CLucene.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;Qt5OpenGLExtensions.lib;Qt5PlatformSupport.lib;Qt5UiTools.lib;Qt5Widgets.lib;qtmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="generated\moc_MainWindow.cpp" />
+    <ClCompile Include="src\glwidget.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\MainWindow.cpp" />
+    <ClCompile Include="src\MultiSet.cpp" />
+    <ClCompile Include="src\Vector.cpp" />
+    <ClCompile Include="src\VectorField.cpp" />
+    <ClCompile Include="src\Volume.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\MainWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC %(Filename).h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib\qt\bin\$(Platform)\moc.exe "%(FullPath)" -DUNICODE -Dx64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -Isrc -Ilib\base -Ilib\gms -Ilib\glew\include -Ilib\qt\include -Ilib\qt\include\QtCLucene -Ilib\qt\include\QtCore -Ilib\qt\include\QtGui -Ilib\qt\include\QtOpenGL -Ilib\qt\include\QtOpenGLExtensions -Ilib\qt\include\QtPlatformSupport -Ilib\qt\include\QtUiTools -Ilib\qt\include\QtWidgets -Ilib\qt\include\QtZlib -o generated\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename).h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">lib\qt\bin\$(Platform)\moc.exe "%(FullPath)" -DUNICODE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -Isrc -Ilib\base -Ilib\gms -Ilib\glew\include -Ilib\qt\include -Ilib\qt\include\QtCLucene -Ilib\qt\include\QtCore -Ilib\qt\include\QtGui -Ilib\qt\include\QtOpenGL -Ilib\qt\include\QtOpenGLExtensions -Ilib\qt\include\QtPlatformSupport -Ilib\qt\include\QtUiTools -Ilib\qt\include\QtWidgets -Ilib\qt\include\QtZlib -o generated\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC %(Filename).h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib\qt\bin\$(Platform)\moc.exe "%(FullPath)" -DUNICODE -Dx64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -Isrc -Ilib\base -Ilib\gms -Ilib\glew\include -Ilib\qt\include -Ilib\qt\include\QtCLucene -Ilib\qt\include\QtCore -Ilib\qt\include\QtGui -Ilib\qt\include\QtOpenGL -Ilib\qt\include\QtOpenGLExtensions -Ilib\qt\include\QtPlatformSupport -Ilib\qt\include\QtUiTools -Ilib\qt\include\QtWidgets -Ilib\qt\include\QtZlib -o generated\moc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC %(Filename).h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lib\qt\bin\$(Platform)\moc.exe "%(FullPath)" -DUNICODE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -Isrc -Ilib\base -Ilib\gms -Ilib\glew\include -Ilib\qt\include -Ilib\qt\include\QtCLucene -Ilib\qt\include\QtCore -Ilib\qt\include\QtGui -Ilib\qt\include\QtOpenGL -Ilib\qt\include\QtOpenGLExtensions -Ilib\qt\include\QtPlatformSupport -Ilib\qt\include\QtUiTools -Ilib\qt\include\QtWidgets -Ilib\qt\include\QtZlib -o generated\moc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="generated\ui_MainWindow.h" />
+    <CustomBuild Include="src\glwidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">lib\qt\bin\$(Platform)\moc.exe "%(FullPath)" -DUNICODE -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -Isrc -Ilib\base -Ilib\gms -Ilib\glew\include -Ilib\qt\include -Ilib\qt\include\QtCLucene -Ilib\qt\include\QtCore -Ilib\qt\include\QtGui -Ilib\qt\include\QtOpenGL -Ilib\qt\include\QtOpenGLExtensions -Ilib\qt\include\QtPlatformSupport -Ilib\qt\include\QtUiTools -Ilib\qt\include\QtWidgets -Ilib\qt\include\QtZlib -o generated\moc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC %(Filename).h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\moc_%(Filename).cpp</Outputs>
+    </CustomBuild>
+    <ClInclude Include="src\MultiSet.h" />
+    <ClInclude Include="src\Vector.h" />
+    <ClInclude Include="src\VectorField.h" />
+    <ClInclude Include="src\Volume.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\MainWindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC %(Filename).ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generated\ui_%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib\qt\bin\$(Platform)\uic.exe -o generated\ui_%(Filename).h "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC %(Filename).ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generated\ui_%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib\qt\bin\$(Platform)\uic.exe -o generated\ui_%(Filename).h "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC %(Filename).ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">generated\ui_%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">lib\qt\bin\$(Platform)\uic.exe -o generated\ui_%(Filename).h "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC %(Filename).ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">generated\ui_%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">lib\qt\bin\$(Platform)\uic.exe -o generated\ui_%(Filename).h "%(FullPath)"</Command>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
