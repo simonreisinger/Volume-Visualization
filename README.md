@@ -6,4 +6,6 @@ It visulizes CT Scan Data
 
 # Resources:
 * [Qt](https://www.qt.io/)
+* [GLEW](http://glew.sourceforge.net/)
+* [GLM](https://glm.g-truc.net/0.9.9/index.html)
 * [Datasets](https://www.cg.tuwien.ac.at/research/vis/datasets/)
