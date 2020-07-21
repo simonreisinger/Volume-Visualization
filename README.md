@@ -4,4 +4,6 @@ This project was created in the course [Vis 1](https://www.cg.tuwien.ac.at/cours
 It visulizes CT Scan Data
 
 
-# Datasets: https://www.cg.tuwien.ac.at/research/vis/datasets/
+# Resources:
+* [Qt](https://www.qt.io/)
+* [Datasets](https://www.cg.tuwien.ac.at/research/vis/datasets/)
