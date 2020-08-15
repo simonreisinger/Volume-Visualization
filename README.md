@@ -1,5 +1,5 @@
 # Volume-Visualization
-It visulizes CT Scan Data.
+CT Scan Data Visualization based on OpenGL.
 
 # Resources:
 * [Qt](https://www.qt.io/)
