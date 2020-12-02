@@ -15,3 +15,4 @@ build-Debug
 tmp
 *.exe
 .DS_Store
+.idea/
